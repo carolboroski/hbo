@@ -67,3 +67,34 @@ header {
   padding: 40px;
   justify-items: center;
 }
+
+.filme {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+}
+
+.filme img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.filme:hover img {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+  .grade-filmes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .destaque {
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 180px; 
+  }
